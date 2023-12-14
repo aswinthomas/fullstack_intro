@@ -1,3 +1,5 @@
+![Codewars](https://github.r2v.ch/codewars?user=aswinthomas)
+
 # javascript_intro
 
 ## Prerequisites
