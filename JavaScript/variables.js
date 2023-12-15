@@ -21,12 +21,31 @@ console.log("Incremented num = " + num)
 num--;
 console.log("Decremented num = " + num)
 
-
+// let does not let you declare a variable twice
+// let is also limited to the block its declared in
+let name = "Quincy";
 
 // a variable that should never change
-const pi = 3.14;
-console.log("PI = " + pi);
+const PI = 3.14;
+console.log("PI = " + PI);
 // pi = 3.15 will throw error
+
+const arr = [5, 7, 4];
+console.log(arr);
+// arr = [2, 4, 6]  will throw error
+// but elements can be mutated
+arr[0] = 2;
+arr[1] = 4;
+arr[2] = 6;
+console.log(arr);
+
+const MATH_CONSTANTS = {
+    PI: 3.14
+};
+// this freeze prevents mutations like MATH_CONSTANTS.PI = 99;
+Object.freeze(MATH_CONSTANTS);
+
+
 
 var dec = 2.0;
 console.log("Decimal = " + dec);
