@@ -89,3 +89,12 @@ function caseInSwitch(val) {
 console.log(caseInSwitch(1));
 console.log(caseInSwitch(100));
 console.log(caseInSwitch("cat"));
+
+// ternary operator
+function getVal(a,b) {
+    return a === b ? 11 : 12;
+}
+
+function checkSign(num) {
+    return num>0 ? "positive" : (num<0 ? "negative" : "zero"); 
+}
